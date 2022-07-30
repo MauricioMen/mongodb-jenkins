@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: Test
+      host: pruebaMongoDB
+      port: 27017
