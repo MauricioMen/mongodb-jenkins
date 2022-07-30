@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                    sh 'mvn install'
+                    bat 'mvn install'
             }
         }
         
         stage('Deploy'){
             steps{
                 dir('/src/main/resources') {
-                    sh 'docker compose build'
+                    bat 'docker compose build'
                 }
             }
         }
