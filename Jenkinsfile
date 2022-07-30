@@ -11,7 +11,7 @@ pipeline {
         stage('Deploy'){
             steps{
                 bat 'dir'
-                dir('/src') {
+                dir('/src/main') {
                 	bat 'dir'
                 }
                 dir('/src/main/resources') {
