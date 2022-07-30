@@ -10,14 +10,8 @@ pipeline {
         
         stage('Deploy'){
             steps{
-                bat 'dir'
-                dir('/src/main') {
-                	bat 'dir'
-                }
-                dir('/src/main/resources') {
                 	bat 'dir'
                     bat 'docker-compose build'
-                }
             }
         }
             
