@@ -1,14 +1,14 @@
 version: "3"
 services:
-  pruebaMongoDBV:
+  pruebaMongoDB:
     image: mongo:latest
-    container_name: "pruebaMongoDBV"
+    container_name: "pruebaMongoDB"
     ports: 
       - 27017:27017
-  springboot-mongodbtestv:
-    image: springboot-mongodbtestv:1.0
-    container_name: springboot-mongodbtestv
+  springboot-mongodbtest:
+    image: springboot-mongodbtest:1.0
+    container_name: springboot-mongodbtest
     ports:
       - 8080:8080
     links:
-      - pruebaMongoDBV
+      - pruebaMongoDB
