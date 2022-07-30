@@ -11,7 +11,7 @@ pipeline {
         stage('Deploy'){
             steps{
                 dir('/src/main/resources') {
-                    bat 'docker compose build'
+                    bat 'docker-compose build'
                 }
             }
         }
